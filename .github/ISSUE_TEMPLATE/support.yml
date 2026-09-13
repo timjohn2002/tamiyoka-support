@@ -1,0 +1,32 @@
+name: Tamiyoka support
+description: Ask for help with Tamiyoka for Mac
+title: "Support: "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for using Tamiyoka. Please avoid sharing private task names, payment details, or other sensitive information.
+  - type: dropdown
+    id: area
+    attributes:
+      label: What do you need help with?
+      options:
+        - Focus timer
+        - Notch companion
+        - Premium purchase or restore
+        - Companion progress
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Include the steps you took and what you expected to happen.
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 26.0
